@@ -37,13 +37,15 @@
 
 <body>
   <a-scene
-    embedded
-    vr-mode-ui="enabled: false"
-    renderer="antialias: true; alpha: true"
-    arjs="sourceType: webcam;
-          facingMode: environment;
-          debugUIEnabled: false;
-          videoTexture: false;">
+  embedded
+  vr-mode-ui="enabled: false"
+  arjs="sourceType: webcam;
+        facingMode: environment;
+        debugUIEnabled: false;
+        sourceWidth: 640;
+        sourceHeight: 480;
+        displayWidth: 640;
+        displayHeight: 480;">
 
     <a-light type="ambient" intensity="1.5"></a-light>
     <a-light type="directional" position="1 2 1" intensity="1"></a-light>
